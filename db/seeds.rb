@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Contribution.destroy_all
-User.destroy_all
 Story.destroy_all
+User.destroy_all
 
 
 10.times do 
-    User.create(username: Faker::FunnyName.name, location: Faker::Nation.capital_city, image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['animals']))
+    User.create(username: Faker::FunnyName.name, location: Faker::Nation.capital_city, image: Faker::LoremFlickr.image(size: "100x100", search_terms: ['animals']))
 end
 
 10.times do

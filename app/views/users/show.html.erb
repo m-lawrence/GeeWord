@@ -1,0 +1,13 @@
+<h1>Welcome, <%= @user.username %></h1>
+
+<img src="<%= @user.image %>">
+<h4>Location: <%= @user.location %></h4>
+
+<h4>My Stories:</h4>
+<ul>
+<% @user.stories. each do |story| %>
+    <li><%= link_to story.title, story_path(story) %></li>
+    <% end %></ul>
+    
+<br>
+<%= link_to "Back to all stories", stories_path %>
