@@ -1,6 +1,8 @@
-<h1>Create a GeeWord Account!</h1>
+<% if flash[:errors] %>
+    <p style="color: red"><strong><%= flash[:errors] %></strong></p>
+    <% end %>
 
-<%= form_for @user do |f| %>
+<%= form_for :session, url: 'login', html: {class: 'form-basic'} do |f| %>
     <%= f.label :username %>
     <%= f.text_field :username %>
     <%= f.label :password %>
