@@ -8,4 +8,8 @@
 
 <p><%= link_to "Gee, I wanna add to this story", new_contribution_path %></p>
 
-<%= link_to "Back to all stories", stories_path %>
+<p><%= link_to "Back to all stories", stories_path %></p>
+
+<p><%= link_to "Take me back to my GeeWord page", user_path(@current_user) %></p>
+
+<p><%= button_to "Take me back to #{@current_user.username}'s page", user_path(@current_user), method: :get %></p>
