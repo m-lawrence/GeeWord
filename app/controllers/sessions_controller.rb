@@ -5,7 +5,8 @@ class SessionsController < ApplicationController
 
     def logout
         session.delete(:user_id)
-        redirect_to users_path
+        # redirect_to new_login_path
+        redirect_to root_path
     end
 
     def new_login

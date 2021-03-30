@@ -1,6 +1,6 @@
 class Story < ApplicationRecord
     belongs_to :user
-    has_many :contributions
+    has_many :contributions, dependent: :destroy_async
 
     validates :title, presence: true
     validates :content, presence: true

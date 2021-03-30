@@ -1,5 +1,5 @@
 <h1>Check out a Story</h1>
 
 <% @stories.each do |story| %>
-<h3><%= link_to story.title, story_path(story) %></h3>
+<h3><%= link_to story.title, story_path(story) %> (authored by: <%= story.user.username %>)</h3>
 <% end %>

@@ -10,5 +10,5 @@ class ApplicationController < ActionController::Base
         redirect_to new_login_path unless logged_in_user
     end
 
-   
+
 end

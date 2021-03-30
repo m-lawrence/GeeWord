@@ -12,9 +12,11 @@
 <br>
 <h4>My Contributions:</h4>
 <ul>
-<% @user.contributions.each do |contribution| %>
-    <li><%= link_to contribution.story.title, story_path(contribution.story) %></li>
-<% end %>
+    <% @user.contributions.each do |contribution| %>
+        <% if contribution.story %>
+            <li><%= link_to contribution.story.title, story_path(contribution.story) %></li>
+        <% end %>
+    <% end %>
 </ul>
 <br>
 <%= link_to "Start a new story", new_story_path %>
