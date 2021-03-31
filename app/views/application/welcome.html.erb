@@ -1,7 +1,24 @@
-
-<%= link_to 'Login', new_login_path %> 
+<h1>Login Page</h1>
 <br>
-<br>
-<%= link_to 'Creat an account', new_user_path %> 
+<% if flash[:errors] %>
+    <p style="color: red"><strong><%= flash[:errors] %></strong></p>
+    <% end %>
+<%= form_for :session, url: 'login', html: {class: 'form-basic'} do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+    <%= f.submit "Gee, are you ready to write?" %>
+    <% end %>
 
-<%# <%=# render partial: 'sessions/new_login' %> 
+    <h1>Create a GeeWord Account!</h1>
+
+<%= form_for @user do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+    <%= f.submit "Gee, are you ready to write?" %>
+    <% end %>

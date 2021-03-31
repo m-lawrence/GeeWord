@@ -1,16 +1,26 @@
-<h1>Welcome, <%= @user.username %></h1>
+
+
+<div class='nav'>
+    <h1 class="welcome">Welcome, <%= @user.username %></h1>
+    <ul>
+        <li><%= link_to "Start a new story", new_story_path %></li>
+        <li><%= link_to "Back to all stories", stories_path %></li>
+        <li><%= link_to "Update your location", edit_user_path(@user) %></li>
+        <li><%= link_to 'logout', logout_path, method: :delete %></li>
+    </ul>
+</div>
 
 <img src="<%= @user.image %>">
-<h4>Location: <%= @user.location %></h4>
+<h4 class="location">Location: <%= @user.location %></h4>
 
-<h4>My Stories:</h4>
+<h4 class="my_stories">My Stories:</h4>
 <ul>
 <% @user.stories. each do |story| %>
     <li><%= link_to story.title, story_path(story) %></li>
 <% end %>
 </ul>
-<br>
-<h4>My Contributions:</h4>
+
+<h4 class="my_stories">My Contributions:</h4>
 <ul>
     <% @user.contributions.each do |contribution| %>
         <% if contribution.story %>
@@ -18,11 +28,3 @@
         <% end %>
     <% end %>
 </ul>
-<br>
-<%= link_to "Start a new story", new_story_path %>
-<br>
-<%= link_to "Back to all stories", stories_path %>
-<br>
-<%= link_to "Update your location", edit_user_path(@user) %>
-<br>
-<%= link_to 'logout', logout_path, method: :delete %>

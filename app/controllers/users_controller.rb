@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 
     def update
         @user = User.find(params[:id])
-        @user.assign_attributes(params[:user])
+        @user.assign_attributes(user_params(:location))
         @user.save(validate: false)
         redirect_to user_path(@user)
     end

@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+
+.header {
+    padding: 15px;
+    margin: 15px;
+    background-color: chartreuse;
+    color: cornflowerblue;
+}
+
+.header h1, h3 {
+    text-align: center;
+}
+
+.welcome {
+    font-family: cursive;
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.location {
+    font-family: cursive;
+}
+
+.my_stories {
+    font-family: cursive;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 80px;
+    justify-content: center;
+}
