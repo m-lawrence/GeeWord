@@ -13,4 +13,6 @@
 
 <p><%= button_to "Take me back to #{@current_user.username}'s page", user_path(@current_user), method: :get %></p>
 
-<p><%= button_to "Delete story", story_path(@story), method: :delete %></p>
+<% if @story.user == @current_user %>
+    <p><%= button_to "Delete story", story_path(@story), method: :delete %></p>
+<% end %>
