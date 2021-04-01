@@ -14,12 +14,16 @@
  *= require_self
  */
 
-
+body {
+    background-color: #FCEDD4;
+}
 .header {
     padding: 15px;
     margin: 15px;
-    background-color: chartreuse;
-    color: cornflowerblue;
+    background-color: #C7ABFE;
+    color: #FCEDD4;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 .header h1, h3 {
@@ -65,7 +69,7 @@ div.nav_links {
 }
 
 .nav ul li a:hover {
-    color:aqua;
+    color: #B79DEB;
 }
 
 .my_stories h2 {
@@ -81,6 +85,7 @@ div.nav_links {
     border: 1px solid black;
     border-radius: 20px;
     padding: 80px;
+    background-color: #E0F0A3;
 }
 
 .my_contributions {
@@ -88,6 +93,7 @@ div.nav_links {
     border: 1px solid black;
     border-radius: 20px;
     padding: 80px;
+    background-color: #B3E3D0;
 }
 
 .my_show_container {
@@ -119,7 +125,15 @@ div.welcome h4 {
 }
 
 .story_link a:hover {
-    color: aqua;
+    color: #B79DEB;
+}
+
+.story_index {
+    background-color: #F0C7C8;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 75%;
+    margin: 50px auto;
 }
 
 .story_index_title {
@@ -129,7 +143,15 @@ div.welcome h4 {
 }
 
 .my_show_container ul li a:hover {
-    color: aqua;
+    color: #B79DEB;
+}
+
+.story_show {
+    background-color: #E0F0A3;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 75%;
+    margin: 50px auto;
 }
 
 .story_show_title {
@@ -159,14 +181,14 @@ div.welcome h4 {
     border: 1px solid black;
     border-radius: 25px;
     padding: 60px;
-    background-color: darksalmon;
+    background-color: #E0F0A3;
 }
 
 .home_main_container .signup_container {
     border: 1px solid black;
     border-radius: 25px;
     padding: 60px;
-    background-color: goldenrod;
+    background-color: #B3E3D0;
 }
 
 .login_container label {
@@ -223,6 +245,7 @@ div.new_story_container {
     text-align: center;
     width: 50%;
     padding: 80px;
+    background-color: #B3E3D0;
  }
 
  h1.new_story_title {
@@ -253,6 +276,7 @@ div.new_story_container {
     width: 50%;
     padding: 80px;
     font-family: monospace;
+    background-color: #F0C7C8;
  }
 
  .edit_location_title {
@@ -284,7 +308,11 @@ div.story_nav_links {
 }
 
 .story_nav_container ul li a:hover {
-    color:aqua;
+    color: #B79DEB;
+}
+
+.story p.contribution{
+    color: blueviolet;
 }
 
 .gen_word_container {

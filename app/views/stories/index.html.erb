@@ -1,7 +1,10 @@
-<h3 class="most_prolific">Currently, our most prolific GeeWriter is <span><%= User.most_stories %></span> </h3>
+<h3 class="most_prolific">Currently, our most prolific GeeAuthor is <span><%= User.most_stories %></span> </h3>
+<h3 class="most_prolific">Currently, our most prolific GeeContributor is <span><%= User.most_contributions %></span> </h3>
 
-<h1 class="story_index_title">Check out a Story</h1>
+<div class="story_index">
+    <h1 class="story_index_title">Check out a Story</h1>
 
-<% @stories.each do |story| %>
-<h3 class="story_link"><%= link_to story.title, story_path(story) %> <span> 🖋 <%= story.user.username %></span></h3>
-<% end %> 
+    <% @stories.each do |story| %>
+    <h3 class="story_link"><%= link_to story.title, story_path(story) %> <span> 🖋 <%= story.user.username %></span></h3>
+    <% end %> 
+</div>

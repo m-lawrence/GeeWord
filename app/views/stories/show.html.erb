@@ -13,13 +13,15 @@
         </ul>
     </div>
 </div>
-<h1 class="story_show_title"><%= @story.title %></h1>
-<div class="story">
-    <p><%= @story.content %> 🖋author: <%= @story.user.username %></p>
+<div class="story_show">
+    <h1 class="story_show_title"><%= @story.title %></h1>
+    <div class="story">
+        <p><%= @story.content %> 🖋author: <%= @story.user.username %></p>
 
-    <% @story.contributions.each do |contribution| %>
-    <p style="color: green";><%= contribution.contributor_content %> ✏️contributor: <%= contribution.user.username %></p>
-    <% end %>
+        <% @story.contributions.each do |contribution| %>
+        <p class="contribution"><%= contribution.contributor_content %> ✏️contributor: <%= contribution.user.username %></p>
+        <% end %>
+    </div>
 </div>
 
 <br>
