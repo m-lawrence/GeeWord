@@ -1,5 +1,7 @@
 <h1 class="story_show_title"><%= @story.title %></h1>
 
+<p>To add to this story, use your GeeWord: <strong><%= WordGenerator.all.sample.word %></strong></p>
+<br>
 <div class="story">
     <p><%= @story.content %> 🖋author: <%= @story.user.username %></p>
 

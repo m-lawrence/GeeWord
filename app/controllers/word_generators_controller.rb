@@ -1,0 +1,2 @@
+class WordGeneratorsController < ApplicationController
+end

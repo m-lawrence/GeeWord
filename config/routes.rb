@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :word_generators
   root 'application#welcome'
   resources :contributions
   resources :stories

@@ -1,0 +1,2 @@
+class WordGenerator < ApplicationRecord
+end
