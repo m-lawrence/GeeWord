@@ -13,12 +13,14 @@
 <br>
 <br>
 <br>
-<%= button_to "Gee, I wanna add to this story", new_contribution_path(@story), method: :get %>
+<%= link_to "Gee, I wanna add to this story", new_contribution_path(@story) %>
 
 
 <p><%= link_to "Back to all stories", stories_path %></p>
 
-<p><%= button_to "Take me back to #{@current_user.username}'s page", user_path(@current_user), method: :get %></p>
+<p><%= link_to "Take me back to #{@current_user.username}'s page", user_path(@current_user) %></p>
+
+<%# <p><%= button_to "Take me back to #{@current_user.username}'s page", user_path(@current_user), method: :get %></p>
 
 <% if @story.user == @current_user %>
     <p><%= button_to "Delete story", story_path(@story), method: :delete %></p>

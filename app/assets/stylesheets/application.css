@@ -173,6 +173,12 @@ div.welcome h4 {
     font-family: monospace;
 }
 
+.submit_button {
+    border-radius: 15px;
+    padding: 5px;
+    font-family: monospace;
+}
+
 .signup_container label {
     font-family: monospace;
 }

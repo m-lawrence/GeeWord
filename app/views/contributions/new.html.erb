@@ -6,6 +6,6 @@
         <%= f.hidden_field :user_id, value: @current_user.id %>
         <%= f.label :story_id %><br><br>
         <%= f.collection_select :story_id, Story.all, :id, :title %><br><br>
-        <%= f.submit %>
+        <%= f.submit 'New GeeContribution', :class => 'submit_button'%>
         <% end %>
 </div>

@@ -13,9 +13,10 @@ class UsersController < ApplicationController
         @user = User.create(user_params(:username, :password, :location))
         if @user.valid?
             session[:user_id] = @user.id
-           redirect_to user_path(@user)
-        else 
-            redirect_to new_user_path
+            redirect_to user_path(@user)
+        else
+            flash[:errors] = @user.errors.full_messages 
+            redirect_to root_path
         end
     end
 
