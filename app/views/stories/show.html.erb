@@ -1,11 +1,16 @@
-<h1><%= @story.title %></h1>
+<h1 class="story_show_title"><%= @story.title %></h1>
 
-<p><%= @story.content %> (authored by: <%= @story.user.username %>)</p>
+<div class="story">
+    <p><%= @story.content %> 🖋author: <%= @story.user.username %></p>
 
-<% @story.contributions.each do |contribution| %>
-<p style="color: green";><%= contribution.contributor_content %> (contributed by: <%= contribution.user.username %>)</p>
-<% end %>
+    <% @story.contributions.each do |contribution| %>
+    <p style="color: green";><%= contribution.contributor_content %> ✏️contributor: <%= contribution.user.username %></p>
+    <% end %>
+</div>
 
+<br>
+<br>
+<br>
 <%= button_to "Gee, I wanna add to this story", new_contribution_path(@story), method: :get %>
 
 

@@ -1,24 +1,33 @@
-<h1>Login Page</h1>
 <br>
-<% if flash[:errors] %>
-    <p style="color: red"><strong><%= flash[:errors] %></strong></p>
-    <% end %>
-<%= form_for :session, url: 'login', html: {class: 'form-basic'} do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-    <%= f.label :password %>
-    <%= f.text_field :password %>
-    <%= f.submit "Gee, are you ready to write?" %>
-    <% end %>
+<br>
+<br>
+<br>
+<div class="home_main_container">
+    <div class="login_container">
+        <h1>Login </h1>
+        <br>
+        <% if flash[:errors] %>
+            <p style="color: red"><strong><%= flash[:errors] %></strong></p>
+            <% end %>
+        <%= form_for :session, url: 'login', html: {class: 'form-basic'} do |f| %>
+            <%= f.label "username" %>
+            <%= f.text_field :username %><br><br>
+            <%= f.label "password" %>
+            <%= f.text_field :password %><br><br>
+            <%= f.submit "Gee, are you ready to write?" %>
+            <% end %>
+    </div>
+    <div class="signup_container">    
+        <h1>Create a GeeWord Account!</h1>
 
-    <h1>Create a GeeWord Account!</h1>
-
-<%= form_for @user do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-    <%= f.label :password %>
-    <%= f.text_field :password %>
-    <%= f.label :location %>
-    <%= f.text_field :location %>
-    <%= f.submit "Gee, are you ready to write?" %>
-    <% end %>
+        <%= form_for @user do |f| %>
+            <%= f.label "username" %>
+            <%= f.text_field :username %><br><br>
+            <%= f.label "password" %>
+            <%= f.text_field :password %><br><br>
+            <%= f.label "location" %>
+            <%= f.text_field :location %><br><br>
+            <%= f.submit "Gee, are you ready to write?" %>
+            <% end %>
+    </div> 
+</div>
