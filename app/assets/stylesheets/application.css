@@ -24,6 +24,7 @@ body {
     color: #FCEDD4;
     border: 1px solid black;
     border-radius: 20px;
+    font-size: 1.5em;
 }
 
 .header h1, h3 {
@@ -84,7 +85,7 @@ div.nav_links {
     display: inline-block;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 80px;
+    padding: 100px;
     background-color: #E0F0A3;
 }
 
@@ -92,7 +93,7 @@ div.nav_links {
     display: inline-block;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 80px;
+    padding: 100px;
     background-color: #B3E3D0;
 }
 
@@ -100,6 +101,7 @@ div.nav_links {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-size: 1.5em;
 }
 
 .my_show_container ul li a {
@@ -111,6 +113,7 @@ div.nav_links {
 div.welcome h4 {
     margin-left: 100px;
 }
+
 
 .story_link span {
     font-size: smaller;
@@ -180,15 +183,17 @@ div.welcome h4 {
 .home_main_container .login_container {
     border: 1px solid black;
     border-radius: 25px;
-    padding: 60px;
+    padding: 100px;
     background-color: #E0F0A3;
+    font-size: 1.3em;
 }
 
 .home_main_container .signup_container {
     border: 1px solid black;
     border-radius: 25px;
-    padding: 60px;
+    padding: 100px;
     background-color: #B3E3D0;
+    font-size: 1.3em;
 }
 
 .login_container label {
@@ -213,6 +218,7 @@ p.generated_word {
 p.generated_word span {
     font-weight: bold;
     font-size: 1.5em;
+    color: blueviolet;
 }
 
 div.login_redo {
@@ -265,6 +271,7 @@ div.new_story_container {
     width: 50%;
     padding: 80px;
     font-family: monospace;
+    background-color:  #E0F0A3;
  }
 
  div.edit_location_container {
@@ -289,7 +296,6 @@ div.new_story_container {
 }
 
 .story_nav_container ul {
-    /* margin-left: 600px; */
     text-align: right;
     padding-left: 0;
     display: inline-block;
@@ -328,10 +334,40 @@ div.story_nav_links {
 
 .most_prolific {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
+    text-align: center;
     margin-left: 50px;
 }
 
 .most_prolific span {
     font-size: 1.25em;
+    color:hotpink;
 }
+
+.prolific_container {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:#B3E3D0;
+    margin: 10px auto;
+    width: 75%;
+}
+
+.simple_nav_links {
+    text-align: right;
+    margin-right: 200px;
+    display: inline-block;
+    width: 80%;
+}
+
+.simple_nav_links ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.simple_nav_links ul li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.simple_nav_links ul li a:hover {
+    color: #B79DEB;

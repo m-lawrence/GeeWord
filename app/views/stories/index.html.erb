@@ -1,6 +1,17 @@
-<h3 class="most_prolific">Currently, our most prolific GeeAuthor is <span><%= User.most_stories %></span> </h3>
-<h3 class="most_prolific">Currently, our most prolific GeeContributor is <span><%= User.most_contributions %></span> </h3>
 
+    <div class='simple_nav_links'>
+        <ul>
+            <li><%= link_to "Back to my page", user_path(@current_user) %></li>
+            <li><%= link_to 'logout', logout_path, method: :delete %></li>
+        </ul>
+    </div>
+
+<br>
+<div class="prolific_container">
+    <h2 class="most_prolific">Our Current Prolific Gees</h2>
+    <h3 class="most_prolific">Author: <span><%= User.most_stories %></span> </h3>
+    <h3 class="most_prolific">Contributor: <span><%= User.most_contributions %></span> </h3>
+</div>
 <div class="story_index">
     <h1 class="story_index_title">Check out a Story</h1>
 
