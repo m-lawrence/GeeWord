@@ -1,7 +1,10 @@
-<%= form_for @contribution do |f| %>
-    <%= f.label :contributor_content %>
-    <%= f.text_field :contributor_content %>
-    <%= f.hidden_field :user_id, value: @current_user.id %>
-    <%= f.collection_select :story_id, Story.all, :id, :title %>
-    <%= f.submit %>
-    <% end %>
+<br>
+<div class="new_contribution_container">
+    <%= form_for @contribution do |f| %>
+        <%= f.label :contributor_content %>
+        <%= f.text_field :contributor_content %><br><br>
+        <%= f.hidden_field :user_id, value: @current_user.id %>
+        <%= f.collection_select :story_id, Story.all, :id, :title %><br><br>
+        <%= f.submit %>
+        <% end %>
+</div>

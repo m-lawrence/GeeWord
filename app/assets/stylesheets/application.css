@@ -136,6 +136,7 @@ div.welcome h4 {
     text-align: center;
     font-family: cursive;
     font-size: 3em;
+    text-decoration: underline;
 }
 
 .story {
@@ -175,3 +176,64 @@ div.welcome h4 {
 .signup_container label {
     font-family: monospace;
 }
+
+p.generated_word {
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p.generated_word span {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+div.login_redo {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.login_redo_title {
+    text-align: center;
+    font-family: cursive;
+}
+
+div.login_redo_container {
+   border: 1px solid black;
+   border-radius: 20px;
+   margin: auto;
+   width: fit-content;
+   text-align: center;
+   width: 50%;
+}
+
+div.new_story_container {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    width: 50%;
+    padding: 80px;
+ }
+
+ h1.new_story_title {
+     font-family: cursive;
+ }
+
+ div.new_story_form {
+     font-family: monospace;
+ }
+
+ div.new_contribution_container {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    width: 50%;
+    padding: 80px;
+    font-family: monospace;
+ }
