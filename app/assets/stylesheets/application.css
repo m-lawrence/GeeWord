@@ -258,3 +258,52 @@ div.new_story_container {
  .edit_location_title {
      font-family: cursive;
  }
+
+ .story_nav_container ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.story_nav_container ul {
+    /* margin-left: 600px; */
+    text-align: right;
+    padding-left: 0;
+    display: inline-block;
+}
+
+
+div.story_nav_links {
+    display: inline-block;
+    width: 55%;
+}
+
+.story_nav_container ul li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.story_nav_container ul li a:hover {
+    color:aqua;
+}
+
+.gen_word_container {
+    width: 40%;
+    display: inline-block;
+}
+
+.story_nav_container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.most_prolific {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.most_prolific span {
+    font-size: 1.25em;
+}
