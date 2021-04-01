@@ -1,8 +1,12 @@
-<h1>Edit your GeeWord Account!</h1>
+<br>
+<br>
+<div class="edit_location_container">
+    <h1 class="edit_location_title">Edit your GeeWord Location!</h1>
 
 
-<%= form_for @user do |f| %>
-    <%= f.label :location %>
-    <%= f.text_field :location %>
-    <%= f.submit "Change my location" %>
-    <% end %>
+    <%= form_for @user do |f| %>
+        <%= f.label :location %>
+        <%= f.text_field :location %>
+        <%= f.submit "Change my location" %>
+        <% end %>
+</div>
