@@ -270,9 +270,9 @@ div.new_story_container {
     width: fit-content;
     text-align: center;
     width: 50%;
-    padding: 80px;
+    padding: 20px 80px;
     font-family: monospace;
-    background-color:  #E0F0A3;
+    background-color:  #B3E3D0;
  }
 
  div.edit_location_container {
@@ -300,6 +300,7 @@ div.new_story_container {
     text-align: right;
     padding-left: 0;
     display: inline-block;
+    margin-left: 300px;
 }
 
 

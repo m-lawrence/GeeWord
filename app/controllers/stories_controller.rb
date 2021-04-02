@@ -6,6 +6,7 @@ class StoriesController < ApplicationController
 
     def show
         @story = Story.find(params[:id])
+        @contribution = Contribution.new
     end
 
     def new

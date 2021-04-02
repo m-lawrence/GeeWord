@@ -5,7 +5,6 @@
     </div>
     <div class="story_nav_links">
         <ul>
-            <li><%= link_to "Gee, I wanna add to this story", new_contribution_path(@story) %></li>
 
             <li><%= link_to "Back to all stories", stories_path %></li>
 
@@ -13,6 +12,8 @@
         </ul>
     </div>
 </div>
+
+
 <div class="story_show">
     <h1 class="story_show_title"><%= @story.title %></h1>
     <div class="story">
@@ -24,12 +25,17 @@
     </div>
 </div>
 
-<br>
-<br>
-<br>
 
+<div class="new_contribution_container">
+    <%= form_for @contribution do |f| %>
+        <%= f.label :contributor_content %><br><br>
+        <%= f.text_area :contributor_content, size: "50x10" %><br><br>
+        <%= f.hidden_field :user_id, value: @current_user.id %>
+        <%= f.hidden_field :story_id, value: @story.id %><br><br>
+        <%= f.submit 'New GeeContribution', :class => 'submit_button'%>
+        <% end %>
+</div>
 
-<%# <p><%= button_to "Take me back to #{@current_user.username}'s page", user_path(@current_user), method: :get %></p>
 
 <% if @story.user == @current_user %>
     <p><%= button_to "Delete story", story_path(@story), method: :delete %></p>
